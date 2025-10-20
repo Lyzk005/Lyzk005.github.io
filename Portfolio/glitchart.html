@@ -4,42 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Gallery</title>
-<style>
-  body {
-    text-align: center;
-    background-color: #fff; /* optional: background color */
-  }
-
-  img {
-    width: 600px;        /* make all images same width */
-    height: 400px;       /* same height */
-    object-fit: cover;   /* crops to fit box */
-    margin: 10px;        /* space between pictures */
-    border-radius: 10px; /* optional rounded corners */
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  }
-
-  a:hover {
-    color: hotpink;
-  }
-</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white text-center">
+<div class="container-fluid p-5 bg-secondary text-white text-center">
+  <h1>Glitch Art</h1>
+  <p>Resize this responsive page to see the effect!</p>
 
-<a href="index.html"></a>
+<div class="container ">
+  <div class="row g-3 justify-content-center">
+    <div class="col-12 col-sm-4">
+      <img src="gliz.jpg" class="img-fluid rounded" 
+           style="width: 550px; height: 250px; object-fit: cover;" alt="gliz">
+    </div>
+    <div class="col-12 col-sm-4">
+      <img src="gli.jpg" class="img-fluid rounded" 
+           style="width: 550px; height: 250px; object-fit: cover;" alt="gli">
+    </div>
+    <div class="col-12 col-sm-4">
+      <img src="glitzx.jpg" class="img-fluid rounded" 
+           style="width: 550px; height: 250px; object-fit: cover;" alt="glitzx">
+    </div>
+  </div>
+  <!-- Gallery description -->
+<div class="container mt-4">
+  <p class="text-center fs-5">
+    The first image shows a branch of flowers, uneven in color and scattered apart. 
+    The second image depicts a flower, but it’s deformed and distorted so much that it appears to be screaming rather than simply existing. 
+    The third image portrays a cat, partially complete, exaggerated, and unclear. 
+    Through this series, I want to explore the idea that existence can be seen as an honor, but that perception depends on perspective. Not everyone views existence in a positive light.
+  </p>
+</div>
 
-<!-- Your images -->
-<img src="gliz.jpg" alt="gliz">
-<img src="gli.jpg" alt="gli">
-<img src="glitzx.jpg" alt="glitzx">
+</div>
 
-<p>
-  <a href="index.html"> Back </a>
+
+<p class="mt-3">
+ <a href="index.html" class="text-white text-decoration-none fs-5">Back</a>
+
 </p>
 
 </body>
