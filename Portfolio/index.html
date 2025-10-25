@@ -9,12 +9,12 @@
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
   <div class="container-fluid d-flex justify-content-center align-items-center">
     <h1 class="me-5 mb-0">LYZPortfolio</h1>
-
     <ul class="navbar-nav">
-	<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
       <li class="nav-item"><a href="glitchart.html" class="nav-link">GlitchArt</a></li>
       <li class="nav-item"><a href="mememashup.html" class="nav-link">MemeMashup</a></li>
       <li class="nav-item"><a href="minecraft.html" class="nav-link">Minecraft</a></li>
@@ -23,21 +23,54 @@
     </ul>
   </div>
 </nav>
-<div class="container mt-4">
-  <div class="row g-3 justify-content-center">
-    <div class="col-12 col-sm-6 col-md-4">
-      <img src="da.jpg" class="rounded" style="width: 100%; height: 300px; object-fit: cover;" alt="da">
+
+<div class="container mt-5">
+
+  <div id="carousel2" class="carousel slide me-3" data-bs-ride="carousel" data-bs-interval="3000" style="width:500px; height:300px;">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img src="gli.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 1">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="gliz.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 2">
+      </div>
+      <div class="carousel-item h-100">
+        <img src="glitzx.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 3">
+      </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-4">
-      <img src="daz.jpg" class="rounded" style="width: 100%; height: 300px; object-fit: cover;" alt="daz">
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-      <img src="dax.jpg" class="rounded" style="width: 100%; height: 300px; object-fit: cover;" alt="dax">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+ <div class=" mt-5">
+    <a href="glitchart.html" class="btn btn-dark btn-lg">Go to Glitch Art</a>
   </div>
 </div>
 
+</div>
 
 
+<div class="container mt-5">
+  <div class="row justify-content-center g-3">
+    <div class="col-12 col-md-4">
+      <img src="da.jpg" class="img-fluid rounded" style="height: 400px; object-fit: cover;" alt="da">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="daz.jpg" class="img-fluid rounded" style="height: 400px; object-fit: cover;" alt="daz">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="dax.jpg" class="img-fluid rounded" style="height: 400px; object-fit: cover;" alt="dax">
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+    <a href="3dprint.html" class="btn btn-dark btn-lg">Go to 3D Print</a>
+  </div>
+</div>
 </body>
 </html>
