@@ -24,12 +24,13 @@
   </div>
 </nav>
 
+<!-- Top Section: Carousels + About Me -->
 <div class="container mt-5">
-  <div class="row g-3"> 
+  <div class="row g-3 justify-content-center align-items-start">
 
-
-    <div class="col-auto">
-      <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="width:500px; height:300px;">
+    <!-- Large Carousel -->
+    <div class="col-12 col-md-4">
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="height:300px;">
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
             <img src="gli.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 1">
@@ -50,10 +51,9 @@
       </div>
     </div>
 
- 
- 
-    <div class="col-auto">
-      <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="width:300px; height:300px;">
+    <!-- Small Carousel -->
+    <div class="col-12 col-md-3">
+      <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="height:300px;">
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
             <img src="da.jpg" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 1">
@@ -74,19 +74,23 @@
       </div>
     </div>
 
-  
-  
-    <div class="col-auto">
-      <div class="border p-3" style="width:300px; height:300px;">
+    <!-- About Me -->
+    <div class="col-12 col-md-3">
+      <div class="border p-3 h-100">
         <h3>About Me</h3>
-        <p>I’m a DMA major student at SJSU. Throughout my studies, I’ve developed a variety of creative skills, including web-based projects, glitch art, and 3D printing.</p>
+        <p>
+          I’m a DMA major student at SJSU, exploring the world of digital and interactive art.  
+          Through my studies, I’ve developed a variety of creative skills, including web-based projects, glitch art, and 3D printing.  
+          This portfolio showcases the work I have made through what I have learned.
+        </p>
         <a href="glitchart.html" class="btn btn-dark btn-lg mt-3">Go to Glitch Art</a>
       </div>
     </div>
 
+  </div>
+</div>
 
-
-
+<!-- Gallery Section -->
 <div class="container mt-5">
   <div class="row justify-content-center g-3">
     <div class="col-12 col-md-4">
@@ -100,9 +104,11 @@
     </div>
   </div>
 </div>
-<div class="container mt-5">
-    <a href="3dprint.html" class="btn btn-dark btn-lg">Go to 3D Print</a>
-  </div>
+
+<!-- 3D Print Button -->
+<div class="container mt-5 text-center">
+  <a href="3dprint.html" class="btn btn-dark btn-lg">Go to 3D Print</a>
 </div>
+
 </body>
 </html>
