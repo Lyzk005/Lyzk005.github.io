@@ -1,57 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>LYZ Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-
-
-<nav class="navbar navbar-expand-sm bg-light justify-content-center shadow">
-  <div class="container-fluid d-flex justify-content-center align-items-center">
-    <h1 class="me-5 mb-0">LYZPortfolio</h1>
-    <ul class="navbar-nav">
-      <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-      <li class="nav-item"><a href="glitchart.html" class="nav-link">GlitchArt</a></li>
-      <li class="nav-item"><a href="mememashup.html" class="nav-link">MemeMashup</a></li>
-      <li class="nav-item"><a href="minecraft.html" class="nav-link">Minecraft</a></li>
-      <li class="nav-item"><a href="3dprint.html" class="nav-link">3DPrint</a></li>
-      <li class="nav-item"><a href="netartlanding.html" class="nav-link">NetArt</a></li>
-	  <li class="nav-item"><a href="diy.html" class="nav-link">DIY</a></li>
-	   <li class="nav-item"><a href="game.html" class="nav-link">Game</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container mt-5 text-black text-center">
- <h1 class="fw-bold">DIY</h1>
- <p class="lead">A playful drawing space and creative tool for you to explore, experiment, and make your own art.</p>
-</div>
-
-<div class="d-flex justify-content-center">
-  <div style="width: 1100px; height: 1010px;">
-    <iframe
-      src="diy/index.html"
-      style="width: 100%; height: 100%; border: 2px solid black;"
-    ></iframe>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="container mt-4">
-<div class="container mt-5 text-black ">
-  <pre class="fs-6">
-  
 var initials = 'mc'; 
 var choice = '1'; 
 var screenbg = 255; 
@@ -63,7 +9,7 @@ var currentColor = [0, 0, 0, 255];
 
 
 function setup() {
-  createCanvas(900, 900);
+  createCanvas(1000, 1000);
   background(screenbg);
 }
 
@@ -253,28 +199,3 @@ function saveme() {
   }
   lastscreenshot = second();
  }
-  </pre>
-    </div>
- 
-
-<div class="container mt-5 text-center pb-5 mb-5">
-
-  <a href="game.html" class="btn btn-dark btn-lg">Go to Game</a>
-  <a href="netartlanding.html" class="btn btn-dark btn-lg">Go to NetArt</a>
-
-</div>
-
-<div class="container mt-5 text-center pb-5 mb-5">
-</div>
-
-
-<div id="bottomCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel" data-bs-interval="3000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="daz.jpg" class="d-block w-100" style="height:300px; width: 500; object-fit:cover;" alt="Background 1">
-  
-  </div>
-</div>
-
-</body>
-</html>
