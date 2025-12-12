@@ -977,6 +977,7 @@ function resetPositions() {
   goingUp = false;
   goingDown = false;
   targetY = 170;
+  y = baseY;
 
   // Chopsticks
   chopY = 0;
