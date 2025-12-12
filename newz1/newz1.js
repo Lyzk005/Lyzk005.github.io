@@ -823,7 +823,7 @@ fill(255);
   textAlign(CENTER);
   text("Waiting ...", width/2, height/2 - 250);
   
- if (millis() -  timeCountdown > 1000) {
+ if (millis() -  timeCountdown > 2000) {
     state = "choose";
  }
 }
@@ -911,6 +911,85 @@ function end() {
 }
 
 
+function resetPositions() {
+  // Main characters
+  circle1x = 450; 
+  circle1y = 500;
+  circleSize = 50;
+
+  circlex = 850; 
+  circley = 500;
+  circleSize = 50;
+
+  charx = 900; 
+  chary = 300; 
+  charSize = 400;
+
+  char1x = 900; 
+  char1y = 300; 
+  char1Size = 400;
+
+  char2x = 900; 
+  char2y = 300; 
+  char2Size = 400;
+  char2handx = 328;
+  char2handy = 294;
+
+  charlx = 700;  
+  charly = 350;
+
+  charl1x = 550;  
+  charl1y = 350;
+
+  charl2x = 700;  
+  charl2y = 350;
+
+  charl3x = 600;  
+  charl3y = 330;
+
+  charl4x = 600;  
+  charl4y = 330;
+
+  // Cat, body
+  catx = 900; 
+  caty = 340; 
+  catSize = 400;
+  bodyx = 645; 
+  bodyy = 220; 
+  bodySize = 400;
+
+  // Teacher and class head
+  teacherx = 1100; 
+  teachery = 170;
+  classheadx = 650;
+  classheady = 300;
+  headY = 300;
+  headYscene1 = 300;
+  classheadyscene1 = 300;
+
+  // Wakeup animation
+  wakex = 200;
+  wakey = 300;
+  wakeSize = 40;
+  baseY = 200;
+  highestY = 300;
+  count = 0;
+  goingUp = false;
+  goingDown = false;
+  targetY = 170;
+
+  // Chopsticks
+  chopY = 0;
+  chopGoingUp = false;
+
+  // Cleaning
+  charcleanX = 0;
+  cleanGoingBack = false;
+
+  // Timer
+  timerStarted = false;
+  timeCountdown = 0;
+}
 
 
 
@@ -918,13 +997,17 @@ function end() {
 // KEY PRESS
 function keyPressed() {
   if (key === 's' || key === 'S') {
-    if (state === "startP") state = "prepare";
-    if (state === "end") state = "startP"; 
-
-
+    if (state === "startP") {
+      resetPositions(); 
+      state = "prepare";
+    }
+    if (state === "end") {
+      resetPositions(); 
+      state = "startP"; 
+    }
   }
-  
-   if (state === "choose") {
+
+  if (state === "choose") {
     if (key === '1' || key === '2' || key === '3') {
       state = "angry";
     }
@@ -936,6 +1019,7 @@ function keyPressed() {
     goingUp = true;
   }
 }
+
 
 
 
