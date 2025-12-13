@@ -1,0 +1,615 @@
+function setup() {
+  createCanvas(500, 500); 
+  background(255);
+  stroke (0)
+  translate(width / 2, height / 2);
+  scale(0.2);
+  translate(-1000, -1000);
+
+  // DRAWING 
+  
+ 
+  push();
+  translate(-70, -15);
+  fill(2);
+
+     // rectangle
+  rect(800, 1500, 1000, 900);
+   triangle(500, 1500, 1820, 1000, 800, 2100); //hood
+  triangle(200, 2500, 820, 1900, 1300, 2100); //hood
+     // circle
+
+   triangle(1900, 1500, 1820, 1000, 800, 2100); //hood
+  pop();
+
+  
+line(5000,0,-2500,0);  
+line(6000,0,-2500,0);
+line(6000,0,-2500,500);
+line(500,0,-2500,6000);
+
+line(4000,0,-2500,0);  
+line(3000,0,-2500,0);
+line(2000,0,-2500,500);
+line(900,0,-2500,6000);
+
+
+line(7000,0,-2500,0);  
+line(6000,0,-2500,0);
+line(8000,0,-2500,500);
+line(9000,0,-2500,6000);
+
+
+strokeWeight(10);
+line(1200,0,1200,2000);
+strokeWeight(5);
+line(1220,0,1220,2000);
+strokeWeight(10);
+line(0,0,1220,2000);
+strokeWeight(5);
+line(-20,0,1200,2000);
+strokeWeight(10);
+line(1200,0,1420,2000);
+strokeWeight(10);
+line(1600,0,2420,2000);
+strokeWeight(5);
+line(1620,0,2440,2000);
+line(1640,0,2440,2000);
+
+
+
+
+line(-2500,1100,1440,2000);
+line(-2500,1080,1440,1980);
+line(-2500,1050,1440,1950);
+line(-2500,1020,1440,1920);
+
+
+
+strokeWeight(5);
+line(1000,0,-2500,3000);
+line(990,0,-2500,2990); //bg
+
+line(1000,0,-2500,3000);
+
+
+stroke(0);
+strokeWeight(2);
+noFill();
+
+
+
+fill(0)
+
+  // LEFT FACE – blue
+
+  strokeWeight(6);
+  line(715, 1090, 800, 1100);//hm
+   line(710, 1000, 790, 1100);
+  line(660, 890, 720, 1000);
+   line(650, 900, 710, 1000);
+   
+    strokeWeight(2);
+  line(720, 1090, 810, 1100);//hm
+   line(720, 1000, 800, 1100);
+  line(670, 890, 730, 1000);
+   line(660, 900, 720, 1000);
+  
+  
+   
+  line(830, 1100, 960, 1200); //left side face line cn chin
+  strokeWeight(6); //overlay lines s left face
+  line(790, 1100, 930, 1200); //left side face line cn chin
+  line(645, 900, 705, 1000);
+  line(535, 390, 560, 575); //downward connect line left side face / near overlay line
+  line(715, 1000, 795, 1100); 
+  line(555, 570, 595, 700); // line next to left side eye left side face
+
+
+   
+  line(800, 1100, 930, 1200); //left side face line cn chin
+  strokeWeight(2); //overlay lines s left face
+  line(810, 1100, 950, 1200); //left side face line cn chin
+ 
+  line(535, 390, 560, 575); //downward connect line left side face / near overlay line
+  line(715, 1000, 795, 1100); 
+  line(555, 570, 595, 700); // line next to left side eye left side face
+
+
+  strokeWeight(6);
+ 
+  line(595, 700, 660, 890); //under line nxt to left eye left side
+  line(555, 570, 560, 700); // line next to left side eye left side face
+  line(540, 390, 555, 570); //downward connect line left side face / near overlay line
+  line(570, 190, 530, 400); //top left side overlay line face
+  line(590, 670,650,880);
+  line(580, 90, 530, 400);
+  line(730, 190, 770, 400);
+  
+   strokeWeight(2);
+ 
+  line(605, 700, 670, 890); //under line nxt to left eye left side
+
+  line(540, 390, 565, 570); //downward connect line left side face / near overlay line
+  line(570, 190, 530, 400); //top left side overlay line face
+
+  line(590, 670,650,880);
+
+  line(580, 90, 530, 400);
+
+  line(730, 190, 770, 400);
+
+//eyebrown
+  strokeWeight(9);
+  line(550,500,700,500);
+   line(550,490,710,490);
+ line(550,480,710,480);
+ 
+ strokeWeight(2);
+  line(550,500,700,500);
+   line(550,510,710,510);
+ line(550,520,710,520);
+ 
+   strokeWeight(9);
+  line(1000,490,1250,490);
+   line(1000,490,1250,490);
+ line(1000,480,1250,480);
+ 
+   strokeWeight(2);
+  line(1000,500,1250,500);
+   line(1000,510,1250,510);
+ line(1000,520,1250,520);
+ 
+ 
+ 
+  // RIGHT FACE – orange
+  
+  strokeWeight(6);
+  line(1200, 1100, 1000, 1200); // base line near chin
+    line(1210, 1100, 1010, 1200); 
+  line(1300, 1000, 1200, 1100); //second up base line jaw
+  line(1400, 900, 1300, 1000); // near near ear line jaw
+  line(1500, 770, 1400, 900); // near ear line jaw
+
+  // JAW – purple
+  
+  strokeWeight(2);
+  line(930, 1200, 1010, 1200); line(930, 1203, 1010, 1203);
+  line(925, 1150, 1000, 1150);//chin
+  line(925, 1155, 1000, 1155);//chin
+ 
+  // NECK – red
+ 
+  strokeWeight(2);
+  line(960, 1200, 1000, 1300); // neck top connect line
+  line(980, 1430, 1000, 1300); //second line mid left side neck
+  line(970, 1500, 1000, 1400); // neck left mid down line
+  line(1450, 1050, 1500, 800); // neck right side top line
+
+  strokeWeight(2); //overlay lines
+  line(965, 1200, 1005, 1300); // neck top connect line
+  line(985, 1430, 1005, 1300); //second line mid left side neck
+  line(965, 1500, 995, 1400); // neck left mid down line
+  line(1455, 1050, 1505, 800); // neck right side top line
+ 
+  line(1485, 1340, 1445, 1000); // neck base line
+  line(907, 1600, 1447, 1300); // neck base line
+
+  strokeWeight(2); //cross detail lines neck
+  line(895, 1500, 1095, 1200); //neck mid line left
+  line(880, 1495, 1095, 1180); //neck mid line left
+  line(880, 1475, 1095, 1155); //neck mid line left
+  line(880, 1460, 1095, 1140);
+
+  strokeWeight(2);
+  line(1480, 1340, 1440, 1000); // neck base line
+  line(900, 1600, 1440, 1300); // neck base line
+
+  strokeWeight(1);
+  line(900, 1600, 1100, 1300); //neck mid line left
+  line(1300, 1250, 1600, 800); //neck mid line right
+
+  // EARS – teal
+ 
+  strokeWeight(6);
+  line(1500, 400, 1400, 500);
+  line(1600, 400, 1500, 400);
+  line(1620, 420, 1680, 660); 
+  line(1700, 630, 1500, 810);
+  strokeWeight(1);
+  line(1400, 400, 1400, 500);
+  line(1500, 700, 1400, 800);
+  
+  // MOUTH – dark red
+
+  strokeWeight(6); //lips
+  line(980,960, 840, 950);
+  line(990,960, 880, 950);
+  line(1080,960, 800, 950);
+  line(980,965, 770,955);
+  
+  strokeWeight(3);
+   line(970,935, 770,935);
+  line(960,935, 760,935);
+  line(970,925, 780,925); //lipstop
+
+
+
+  strokeWeight(3);
+  line(980,1030, 870,1020);
+  line(940,1030, 870,1020);
+  line(940,1030, 970,1020);
+  strokeWeight(3);
+  line(940,1030, 870,1020);
+  line(940,1030, 870,1020);
+
+  strokeWeight(2);
+  line(840,900, 890,900);
+  line(810,990, 870,1050);
+
+  line(790,980, 890,950);
+  line(780,980, 860,950);
+  line(780,980, 860,950);
+  line(780,910, 860,950);
+
+  strokeWeight(4);
+  line(850,1030, 870,1020); //bottom lip right side line
+
+  strokeWeight(2);
+  line(800,1030, 840,1020); //bottom lip right side line
+
+  // nose
+ 
+  strokeWeight(5);
+  line(800, 780, 900, 800); 
+  strokeWeight(3);
+  line(800, 790, 900, 810); 
+  line(800, 800, 900, 820); 
+  strokeWeight(2);
+  line(800, 760, 900, 820); 
+  line(800, 750, 900, 840); 
+  line(790, 750, 890, 840); 
+  line(770, 750, 870, 840); 
+
+  //Teeth
+
+  strokeWeight(2);
+  line(1000,975, 860,990);
+ 
+  
+  //Eyes
+  
+  strokeWeight(2);
+  line(590, 590, 650, 550);
+  line(590, 600, 650, 550);
+ 
+ stroke(0); strokeWeight(9);
+ line(640, 560, 725, 575);
+ 
+ 
+  stroke(0); strokeWeight(5); //eye
+  
+ line(680, 570, 730, 570);
+  
+ line(680, 570, 730, 580);
+ line(660, 585, 735, 585);
+ line(660, 590, 740, 590);
+ line(670, 595, 745, 595);
+ line(670, 600, 750, 600);
+ line(680, 605, 755, 605);
+ line(680, 610, 760, 610);
+ line(690, 615, 765, 615);
+ line(690, 620, 770, 620);  //left side eye //here
+  line(710, 620, 790, 620);
+ 
+  line(630, 520, 710, 520);
+  line(630, 510, 710, 510);
+ 
+  strokeWeight(1);   
+  line(590, 630, 650, 570);
+  line(590, 630, 650, 540);
+
+  strokeWeight(2.5);  
+  line(610, 580, 750, 580); // eye top straight line
+  line(610, 575, 750, 575); // eye top straight line under one    
+  line(790, 630, 680, 540); // first left side eye line down right
+  line(790, 630, 680, 640);
+  
+  
+  
+  strokeWeight(9);  
+ line(600, 580, 650, 620); //side
+ line(650, 580, 700, 620); // inside side line left eyes
+ 
+   strokeWeight(2);  
+  line(800, 570, 850, 620); //side
+   line(810, 570, 860, 620); //side
+  
+  
+   strokeWeight(2);  
+  line(620, 580, 670, 620); //side deta left eye
+   line(610, 580, 660, 620); //side 
+   line(600, 580, 650, 620); //side 
+   line(625, 580, 675, 620); //side 
+  
+  stroke(255);  //white
+   strokeWeight(9);  
+  line(720, 590, 730, 600); //left eyes /inside
+ 
+ stroke(0);
+  //right eye shape
+  strokeWeight(2);   
+  line(1020, 600, 1100, 520); //right eye left line
+  line(1080, 580, 1100, 520); //right eye left line
+
+  strokeWeight(1);   
+  line(970, 600, 1100, 550); 
+
+  strokeWeight(2);   
+  line(1310, 560, 1000, 560); // eye top straight line
+
+  strokeWeight(3);   //first right eye straight line
+  line(1250, 570, 1000, 570); 
+
+  strokeWeight(3.5);   //right eye top detail
+  line(950, 510, 1100, 500); //right eye top straight line
+
+  strokeWeight(3);   //right eye top detail
+  line(950, 530, 1100, 500); //right eye top straight line
+
+  strokeWeight(2);   
+  line(1290, 600, 1280, 540); // right side eye line down right
+  strokeWeight(2);   
+  line(1290, 600, 1200, 520); // right side eye line down right
+
+
+
+
+ push(); //right eye translate near straight detail line
+  translate(450, -15);
+
+  strokeWeight(2);
+  line(590, 590, 650, 550);
+  line(590, 600, 650, 550);
+ 
+ stroke(0); strokeWeight(9);
+ line(640, 560, 745, 575); //right side eye
+ 
+  
+  stroke(0); strokeWeight(5); //eye
+  
+ line(680, 570, 730, 570);
+  
+ line(680, 570, 760, 580);
+ line(660, 585, 760, 585);
+ line(660, 590, 760, 590);
+ line(670, 595, 760, 595);
+ line(670, 600, 760, 600);
+ line(680, 605, 755, 605);
+ line(680, 610, 760, 610);
+
+  line(630, 520, 710, 520);
+  line(630, 510, 710, 510);
+ 
+  strokeWeight(1);   
+  line(590, 630, 650, 570);
+  line(590, 630, 650, 540);
+
+  strokeWeight(2.5);  
+  line(610, 580, 750, 580); // eye top straight line
+  line(610, 575, 750, 575); // eye top straight line under one    
+  line(790, 630, 680, 540); // first left side eye line down right
+  line(790, 630, 680, 640);
+  
+  strokeWeight(8); 
+   line(670, 610, 770, 610); // eye top straight line
+   
+   
+  strokeWeight(7);  
+ line(600, 580, 650, 620); //side
+ line(650, 580, 700, 620); // inside side line left eyes
+ 
+   stroke(255);  //white
+  strokeWeight(7);  
+ line(600, 580, 650, 620); //side
+ line(650, 580, 700, 620); // inside side line left eyes
+ 
+ stroke(0);
+   strokeWeight(2);  
+  line(620, 570, 670, 620); //side deta left eye
+   line(610, 580, 660, 620); //side 
+   line(600, 580, 650, 620); //side 
+   line(625, 580, 675, 620); //side 
+  
+  stroke(255);  //white
+   strokeWeight(9);  
+  line(720, 590, 725, 600); //left eyes /inside
+ 
+   pop();
+
+
+
+
+
+
+  // Mole / face point
+  stroke(0);
+  strokeWeight(7);
+  point(1270, 900); //mole/face detail — stays exact
+
+  //Hair
+
+
+  
+  // third mid bangs
+  
+    line(880, 0, 1020, 440);
+    line(890, 0, 1030, 440);
+    line(900, 0, 1040, 400);
+    line(910, 0, 1050, 440); //bangs
+    line(920, 0, 1060, 400);
+    line(930, 0, 1070, 400);
+    line(940, 0, 1080, 400);
+    line(950, 0, 1090, 400);
+    line(960, 0, 1100, 400); //third mid
+   
+ // side bangs
+ 
+ line(560, 0, 510, 400);
+ line(570, 0, 520, 400);
+ line(580, 0, 530, 400); //side
+ line(590, 0, 540, 400); 
+ line(600, 0, 550, 490); 
+ line(610, 0, 560, 490); 
+ line(620, 0, 570, 490); 
+ line(630, 0, 580, 490); 
+ line(640, 0, 550, 500); 
+ 
+
+  strokeWeight(3);     
+  line(1000,20, 1080,440);   // bangs no straight right side /top /right
+  line(1010,20, 1090, 440);
+  line(1020,20, 1100, 440);
+  line(1030,20, 1110, 440);
+  line(1040,20, 1120, 440);
+  line(1050,20, 1130, 450);
+  line(1060,20, 1140, 450); //hm
+  line(1070,20, 1150,450);
+  
+  
+  line(620,20, 540,450);
+  line(620,20, 550,450);
+  line(620,20, 560,450);
+  line(620,20, 570,450);
+  line(620,20, 580,450);
+  line(620,20, 590,450);
+  line(620,20, 600,450);
+  
+  line(670,20, 650,450);
+  line(670,20, 660,450);
+  line(670,20, 670,450);
+  line(670,20, 680,450);
+  line(670,20, 690,450);
+  line(670,20, 700,450);
+  line(670,20, 710,450);
+  line(670,20, 720,450);
+  line(670,20, 730,450);
+  line(670,20, 740,450);
+
+     line(820,20, 1150,450); 
+     line(830,20, 1160,450);    
+     line(840,20, 1170,450);    
+     line(850,20, 1180,450);    
+     line(860,20, 1190,450);    
+     line(870,20, 1150,450);  
+     
+       line(1100,20, 1200,450); 
+       line(1100,20, 1210,450); 
+       
+        line(700,20, 1140,450); 
+        line(710,20, 1160,450); 
+        
+  line(700,20, 970,450);         
+  line(700,20, 980,450);        
+  line(700,20, 990,450); 
+  line(600,20, 1000,450);         
+ 
+
+  strokeWeight(1.5);    
+                line(1140,5, 1340, 400);
+                line(1150,5, 1350, 400);    
+                 line(1160,5, 1360, 400);   
+                 line(1170,5, 1370, 400);   
+                 line(1180,5, 1380, 400);   
+                 line(1190,5, 1390, 400);  
+                 
+strokeWeight(2);          //hair right side    
+  line(1200,5, 1400, 400);      
+  line(1210,5, 1410, 400);    
+  line(1220,5, 1420, 400);    
+  line(1230,5, 1430, 400);     
+  line(1240,5, 1440, 400);     
+  
+  
+
+ 
+   
+   
+   
+  //left side hair 
+   
+  strokeWeight(4); 
+  line(550,0,550, 1520); //straight line 
+  line(560,600,560, 1620);
+  line(570,620,570, 1720);
+  line(580,630,580, 1820);
+  line(590,660,590, 1620);
+
+ strokeWeight(7); 
+  line(500,70,500, 1520); 
+  
+  strokeWeight(4);       
+  line(540,0,540, 1550);   //was here
+  line(530,00,530, 1520); 
+  line(520,70,520, 1450); 
+  line(510,150,510, 1420); 
+
+  strokeWeight(4);         
+  line(600,690,600, 1720);
+  line(610,740,610, 1820);
+  line(620,770,620, 1720);
+
+  strokeWeight(4);             
+  line(630,810,630, 1820);
+  line(640,850,640, 1820);
+  line(650,880,650, 1780);
+  
+    line(660,900,660, 1800);
+    line(670,920,670, 1820);
+    line(680,940,680, 1800);
+     line(690,960,690, 1820);
+     line(700,980,700, 1820);
+     line(710,1000,710, 1820);
+     line(720,1020,720, 1820);
+     
+     line(730,1020,730, 1820);
+     line(740,1040,740, 1820);
+     line(750,1050,750, 1820);
+     line(760,1050,760, 1820);
+     
+       line(770,1060,770, 1820);
+         line(780,1080,780, 1840);
+         line(790,1090,790, 1820);
+         line(800,1100,800, 1850);
+         line(810,1110,810, 1820);
+         
+           line(820,1120,820, 1830);
+           line(830,1130,830, 1840);
+         line(840,1140,840, 1870);  //here
+    
+  // right side hair / straight part
+  strokeWeight(4);   
+  line(1400,0,1400, 1820); //straight line
+  line(1410,0,1410, 1820); 
+  line(1420,0,1420, 1820); 
+  line(1430,0,1430, 1790); 
+  line(1440,0,1440, 1790); 
+  line(1450,0,1450, 1760); 
+  line(1460,0,1460, 1730); 
+   line(1470,0,1470, 1700);  //right side straight line
+   line(1480,0,1480, 1700); 
+  line(1490,0,1490, 1700); 
+  line(1500,0,1500, 1700); 
+  line(1510,0,1510, 1660); 
+  line(1520,0,1520, 1660); 
+  line(1530,0,1530, 1660); 
+    line(1540,0,1540, 1660); 
+    line(1550,0,1550, 1660); 
+      line(1560,0,1560, 1660); 
+      line(1570,0,1570, 1660); 
+      line(1630,0,1630, 1660); 
+        line(1620,0,1620, 1790); 
+          line(1640,0,1640, 1790); 
+          line(1650,0,1650, 1790); 
+    
+}
