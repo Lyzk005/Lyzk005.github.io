@@ -1,9 +1,9 @@
 function setup() {
-  createCanvas(700, 450); 
+  createCanvas(1100, 500); 
   background(255);
   stroke (0)
   translate(width / 2, height / 2);
-  scale(0.2);
+  scale(0.3);
   translate(-1000, -1000);
 
   // DRAWING 
