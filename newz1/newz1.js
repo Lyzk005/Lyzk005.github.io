@@ -624,8 +624,8 @@ function nap() {
   text("Walk to your spot", width/2, height/2 - 250); 
   
   
-  if (keyIsDown(68)) charl1x += 5;
-  if (keyIsDown(65)) charl1x -= 5;
+  if (keyIsDown(68)) charl1x += 3;
+  if (keyIsDown(65)) charl1x -= 3;
   
 if (charl1x < 550) charl1x = 550;
 if (charl1x > 1050) charl1x = 1050;
@@ -670,8 +670,8 @@ fill(255);
   textAlign(CENTER);
   text("Put them back in the cabinet", width/2, height/2 - 250);
 
-  if (keyIsDown(68)) charl2x += 5;
-  if (keyIsDown(65)) charl2x -= 5;
+  if (keyIsDown(68)) charl2x += 3;
+  if (keyIsDown(65)) charl2x -= 3;
   
 if (charl2x < 450) charl2x = 450;
 if (charl2x > 800) charl2x = 800;
@@ -823,7 +823,7 @@ fill(255);
   textAlign(CENTER);
   text("Waiting ...", width/2, height/2 - 250);
   
- if (millis() -  timeCountdown > 2000) {
+ if (millis() -  timeCountdown > 1000) {
     state = "choose";
  }
 }
@@ -877,7 +877,7 @@ function tch() {
 function quiet() {
    background(200);
   drawQuiet(width/2, height/2, 800, 500);
-  if (millis() -  timeCountdown > 2000) {
+  if (millis() -  timeCountdown > 2300) {
     state = "yard";
       timeCountdown = millis(); 
   }
