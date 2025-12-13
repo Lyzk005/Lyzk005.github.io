@@ -887,7 +887,7 @@ function quiet() {
 function yard() {
    background(200);
   drawYard(width/2, height/2, 800, 500); 
-  if (millis() -  timeCountdown > 2400) {
+  if (millis() -  timeCountdown > 2300) {
     state = "end";
       timeCountdown = millis(); 
   }
