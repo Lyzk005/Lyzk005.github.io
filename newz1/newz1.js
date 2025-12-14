@@ -1,7 +1,7 @@
 var myFont, seatImg; 
 var bodyImg;
 
-
+var bgm
 var timeCountdown = 0;
 
 
@@ -103,7 +103,7 @@ var state = "startP";
 
 
 function preload() {
-
+ bgm = loadSound('bg.mp3')
  humanImg = loadImage('humn.png');
  catImg = loadImage('cat.png');
  bodyImg = loadImage('body.png');
@@ -1005,6 +1005,10 @@ function keyPressed() {
     if (state === "end") {
       resetPositions(); 
       state = "startP"; 
+    }
+    if (!bgm.isPlaying()) {
+      bgm.loop();
+      bgm.setVolume(0.5);
     }
   }
 
